@@ -16,6 +16,13 @@
   font-style: normal;
 }
 
+
+/* Debug */
+body * {
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
 html, body {
   /* font-family: 'Playfair Display'; */
   font-family: 'Ubuntu', sans-serif;
@@ -32,16 +39,14 @@ html, body {
 
 header {
   padding: 70px 0 20px 0;
-  line-height: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+nav {
+  flex-grow: 2;
   text-align: right;
-}
-
-.logo, nav {
-  display: inline-block;
-  vertical-align: middle;
-}
-.logo {
-  float: left;
+  line-height: 30px;
 }
 
 nav a, nav a:visited {
@@ -59,4 +64,31 @@ nav a:hover {
 .hero img {
   width: 100%;
   height: auto;
+}
+
+.photodiary {
+  
+}
+
+.photodiary a,
+.photodiary a:visited,
+.photodiary span {
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+
+.photodiary h1 {
+  
+}
+
+.photodiary p {
+  
+}
+
+.photodiary a:hover {
+  text-transform: underline;
 }
